@@ -29,7 +29,8 @@ class productsModels {
   updateProducts(dataProducts) {
     const { id, name, price, stock, category, description, image } = dataProducts;
 
-    const products = db('products').where('id', id).update({
+    const products = db('products').where('id', id);
+    return products.update({
       name: name,
       price: price,
       stock: stock,
@@ -37,7 +38,6 @@ class productsModels {
       description: description,
       image: image,
     });
-    return products;
   }
 
   deleteOneProducts(id) {
