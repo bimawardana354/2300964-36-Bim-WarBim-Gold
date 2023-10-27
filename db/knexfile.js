@@ -25,7 +25,7 @@ module.exports = {
     connection: {
       database: 'postgres://dbcoba_user:cBICik7GCQ4QGCx2Q3zPiSjzKqsroqqo@dpg-cktt0lgegfnc73c961n0-a/dbcoba',
       user: 'dbcoba_user',
-      password: 'postgres',
+      password: 'cBICik7GCQ4QGCx2Q3zPiSjzKqsroqqo',
     },
     pool: {
       min: 2,
